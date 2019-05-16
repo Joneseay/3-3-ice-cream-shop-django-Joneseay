@@ -1,24 +1,16 @@
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, CreateView
 from .models import IceCream
 
 class HomePageView(ListView):
     model = IceCream
     template_name = 'home.html'
 
-class FlavorPageView(ListView):
-    model = IceCream
-    template_name = 'flavor_page.html'
 
-class DailyPageView(ListView):
+class FlavorDetailView(DetailView):
     model = IceCream
-    template_name = 'daily_page.html'
+    template_name = 'flavor_detail.html'
 
-class WeeklyPageView(ListView):
+class CreateNewView(CreateView):
     model = IceCream
-    template_name = 'weekly_page.html'
-
-class SeasonalPageView(ListView):
-    model = IceCream
-    template_name = 'seasonal_page.html'
-
-# Create your views here.
+    template_name = 'flavor_new.html'
+    fields = ['flavor', 'base', 'available', 'featured', 'date']

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{ icecream.flavor }}</h1>
+    <ul>
+        <li>{{ icecream.base }}</li>
+        <li>{{ icecream.available }}</li>
+        <li>{{ icecream.featured }}</li>
+        <li>{{ icecream.date }}</li>
+    </ul>
+
+{% endblock content %}
