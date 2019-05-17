@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+    <h1>Flavors</h1>
+     <ul>
+        {% for ice_cream in object_list %}
+            <li><a href="{% url 'flavor_detail' ice_cream.pk %}">{{ ice_cream.flavor }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock content %}
