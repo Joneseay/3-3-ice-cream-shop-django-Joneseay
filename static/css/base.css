@@ -7,12 +7,99 @@ ul{
 img{
     width: 100%;
 }
+body{
+    background-color: #fffdde;
+}
+a{
+    color: #1eb059;
+}
 .home{
+    position: absolute;
+    top: 50%;
     border: black solid 1px;
-    width: 100px;
+    width: 150px;
     text-align: center;
+    background-color: #fffdde;
+    border-radius: 5px;
+    margin: 10px;
+}
+.create{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 150px;
+    text-align: center;
+    background-color: #fffdde;
+    border: black solid 1px;
+    border-radius: 5px;
+    margin: 10px;
+
 }
 .header{
+    position: relative;
     background-color: red;
-    color: white;
+    color: #1eb059;
+    text-align: center;
+    height: 200px;
+    background-image: url("https://images.pexels.com/photos/1352271/pexels-photo-1352271.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.main_title{
+    padding: 20px;
+    height: 180px;
+    width: 400px;
+    font-size: 60px;
+    border: solid 3px #ff0808;
+    border-radius: 50%;
+    margin: 10px auto;
+    background-color: #fffdde;
+
+}
+.menu_bar{
+    text-align: center;
+    background-color: #1eb059;
+    border-top: solid 1px #ff0808;
+    color: #fffdde;
+    padding: 10px;
+}
+.menu_bar li{
+    width: 800px;
+    height: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+.menu_bar li > span{
+    background-color: #fffdde;
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    border: black solid 1px;
+    border-radius: 5px;
+
+
+}
+.content-title{
+    color: #1eb059;
+    height: 40px;
+    width: 250px;
+    text-align:center;
+    margin: 20px auto;
+}
+.card-title{
+    color: #ff0808;
+}
+.card{
+    margin-top: 40px;
+}
+.detail-list{
+    color: #1eb059;
+}
+.detail-list span{
+    margin-right: 10px;
+}
+form{
+    color: #1eb059;
 }

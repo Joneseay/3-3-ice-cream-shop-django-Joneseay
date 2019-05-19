@@ -15,20 +15,22 @@
     <div class = 'header'>
         <h1 class="main_title">Bruster's Ice Cream</h1>
         <div class="home"><a href="{% url 'home' %}">Home</a></div>
+        <div class="create"><a href="{% url 'create_view' %}">Add New Flavor</a></div>
     </div>
-    <h2>Flavors</h2>
-    <ul>
-        <li>
-            <span><a href="{% url 'create_view' %}">Add New Flavor</a></span>
-            <span><a href="{% url 'selection' available='daily' %}">Daily</a></span>
-            <span><a href="{% url 'selection' available='weekly' %}">Weekly</a></span>
-            <span><a href="{% url 'selection' available='seasonal' %}">Seasonal</a></span>
-            <span><a href="{% url 'selection' available='all' %}">All</a></span>
+    <div class="menu_bar">
+        <h2>Flavor Menu</h2>
+        <ul>
+            <li>
+                <span><a href="{% url 'selection' available='daily' %}">Daily</a></span>
+                <span><a href="{% url 'selection' available='weekly' %}">Weekly</a></span>
+                <span><a href="{% url 'selection' available='seasonal' %}">Seasonal</a></span>
+                <span><a href="{% url 'selection' available='all' %}">All</a></span>
 
 
-        </li>
-    </ul>
-    <div>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
         {% block content %}
         {% endblock content %}
     </div>

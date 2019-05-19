@@ -1,12 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>{{ icecream.flavor }}</h1>
-    <ul>
-        <li>{{ icecream.base }}</li>
-        <li>{{ icecream.available }}</li>
-        <li>{{ icecream.featured }}</li>
-        <li>{{ icecream.date }}</li>
+<h2 class="content-title">{{ icecream.flavor }}</h2>
+<div class="row justify-content-around">
+    <ul class="col-md-3 detail-list">
+        <li><span class="detail-category">Base:</span>{{ icecream.base }}</li>
+        <li><span class="detail-category">Available:</span>{{ icecream.available }}</li>
+        <li><span class="detail-category">Featured:</span>{{ icecream.featured }}</li>
+        <li><span class="detail-category">Date Churned:</span>{{ icecream.date }}</li>
     </ul>
+    <img src="https://images.pexels.com/photos/3631/summer-dessert-sweet-ice-cream.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="ice-cream" class="col-md-7">
+</div>    
 
 {% endblock content %}

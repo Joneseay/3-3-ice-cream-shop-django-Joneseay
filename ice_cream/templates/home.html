@@ -1,10 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Featured</h1>
-<ul>
-    {% for ice_cream in object_list %}
-    <li><a href="{% url 'flavor_detail' ice_cream.pk %}">{{ ice_cream.flavor }}</a></li>
-    {% endfor %}
-</ul>
+<h1 class="content-title">Featured</h1>
+ <div class="row justify-content-around">
+        {% for ice_cream in object_list %}
+        <div class="col-3">
+             <div class="card text-center">
+                 <img src="https://images.pexels.com/photos/1352245/pexels-photo-1352245.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="ice-cream" class="card-img-top">
+                 <div class="card-body">
+                    <h3 class="card-title">{{ice_cream.flavor}}</h3>
+                    <a class="card-link" href="{% url 'flavor_detail' ice_cream.pk %}">More Info</a>
+                 </div>
+
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
 {% endblock content %}

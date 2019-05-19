@@ -3,10 +3,19 @@
 
 
 {% block content %}
-    <h1>Flavors</h1>
-     <ul>
+    <h1 class="content-title">Flavors</h1>
+    <div class="row justify-content-around">
         {% for ice_cream in object_list %}
-            <li><a href="{% url 'flavor_detail' ice_cream.pk %}">{{ ice_cream.flavor }}</a></li>
+        <div class="col-3">
+             <div class="card text-center">
+                 <img src="https://images.pexels.com/photos/1352245/pexels-photo-1352245.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="ice-cream" class="card-img-top">
+                 <div class="card-body">
+                    <h3 class="card-title">{{ice_cream.flavor}}</h3>
+                    <a class="card-link" href="{% url 'flavor_detail' ice_cream.pk %}">More Info</a>
+                 </div>
+
+            </div>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 {% endblock content %}
