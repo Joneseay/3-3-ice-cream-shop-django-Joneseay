@@ -103,3 +103,33 @@ a{
 form{
     color: #1eb059;
 }
+.social-media{
+    text-align: center;
+    background-color: #1eb059;
+    color: #fffdde;
+    padding-bottom: 20px;
+}
+.social-media a{
+    color: #fffdde;
+    font-size: 40px;
+    margin: 10px 20px;
+}
+.social-media-icons{
+    height: 40px;
+    width: 200px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    text-align: center;
+    color: #1eb059;
+    padding: 10px;
+}
+.container{
+    padding: 20px;
+}
+a:hover{
+    color: #ff0808;
+}
+
