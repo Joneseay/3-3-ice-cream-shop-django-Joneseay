@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <h2 class="content-title">Edit Flavors</h2>
+        <form action="" method="post">{% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Edit Flavor"/>
+        </form>
+
+{% endblock content %}

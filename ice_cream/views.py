@@ -1,4 +1,5 @@
 from django.views.generic import ListView, DetailView, CreateView
+from django.views.generic.edit import UpdateView, DeleteView
 from .models import IceCream
 
 class HomePageView(ListView):
@@ -31,3 +32,11 @@ class SelectFlavorView(ListView):
         else:
             return IceCream.objects.filter( available = selection)
 
+class IceCreamUpdateView(UpdateView):
+    model = IceCream
+    template_name = 'flavor_edit.html'
+    fields = ['flavor', 'base', 'available', 'featured', 'date']
+
+class FlavorDeleteView(DeleteView):
+    model = IceCream
+    template_name = 'flavor_delete.html'
