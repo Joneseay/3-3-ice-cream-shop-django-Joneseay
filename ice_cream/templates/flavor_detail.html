@@ -8,10 +8,9 @@
         <li><span class="detail-category">Available:</span>{{ icecream.available }}</li>
         <li><span class="detail-category">Featured:</span>{{ icecream.featured }}</li>
         <li><span class="detail-category">Date Churned:</span>{{ icecream.date }}</li>
+        <li class="edit"><span class="edit-buttons"><a href="{% url 'flavor_edit' icecream.pk %}">Edit Flavor</a></span><span class="edit-buttons"><a href="{% url 'flavor_delete' icecream.pk %}">Delete Flavor</a></span></li>
     </ul>
     <img src="https://images.pexels.com/photos/3631/summer-dessert-sweet-ice-cream.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="ice-cream" class="col-md-7">
 </div>
-<a href="{% url 'flavor_edit' icecream.pk %}">Edit Flavor</a>
-<a href="{% url 'flavor_delete' icecream.pk %}">Delete Flavor</a>
 
 {% endblock content %}

@@ -25,7 +25,7 @@ SECRET_KEY = 'fdf4&ij$p^rdrq+l6smk238d1w!ufoasuj)oc#6(!fge*yddn^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ice-cream-shop-django-joneseay.herokuapp.com']
+ALLOWED_HOSTS = ['ice-cream-shop-django-joneseay.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
