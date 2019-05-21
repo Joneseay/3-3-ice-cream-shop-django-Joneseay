@@ -9,6 +9,7 @@ class IceCream(models.Model):
     available = models.CharField(max_length= 100, choices=available_choices)
     featured = models.BooleanField()
     date = models.DateField()
+    url = models.TextField(default = "")
 
     def __str__(self):
         return self.flavor
